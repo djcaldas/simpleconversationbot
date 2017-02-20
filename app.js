@@ -33,7 +33,7 @@ var conversation = new Conversation({
   // username: '<username>',
   // password: '<password>',
   url: 'https://gateway.watsonplatform.net/conversation/api',
-  version_date: '2016-10-21',
+  version_date: '2017-02-03',
   version: 'v1'
 });
 
@@ -49,6 +49,7 @@ app.post('/api/message', function(req, res) {
   }
   var payload = {
     workspace_id: workspace,
+    alternate_intents:true,
     context: req.body.context || {},
     input: req.body.input || {}
   };

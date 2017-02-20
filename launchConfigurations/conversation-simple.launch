@@ -1,0 +1,20 @@
+{
+  "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
+  "Params": {
+    "Target": {
+      "Url": "https://api.ng.bluemix.net",
+      "Org": "duarte.caldas@pt.ibm.com",
+      "Space": "dev"
+    },
+    "Name": "caldas",
+    "Instrumentation": {
+      "host": "caldas",
+      "domain": "mybluemix.net",
+      "services": [
+        "Conversation-93"
+      ]
+    }
+  },
+  "Path": "manifest.yml",
+  "Type": "Cloud Foundry"
+}
